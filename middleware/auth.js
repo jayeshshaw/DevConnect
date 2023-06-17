@@ -19,7 +19,7 @@ module.exports= function (res,req,next){
         next();
     }
     catch ( err ) {
-        res.status(401).json( { msg: 'Token is not valid' } );
+       return res.status(401).json( { msg: 'Token is not valid' } );
     }
 
 
